@@ -11,7 +11,7 @@ export class QuoteComponent implements OnInit {
   quotes = [
     new Quote(1, 'Gustavo', 'To try is to do', 'Junius', new Date(2001, 1, 30), 2, 0),
     new Quote(2, 'Hernandes', 'Ethic is the biggest thing in KE', 'Rekless', new Date(2016, 2, 30), 3, 0),
-    new Quote(3, 'Gusto', 'It was misreported then, and it is misremembered now.', 'Caesar', new Date(2019, 3, 30), 4, 0),
+    new Quote(3, 'Gusto', 'You can only be what you can imagine.', 'Caesar', new Date(2019, 3, 30), 4, 0),
     new Quote(1, 'Jefe', 'Give thanks for life', 'Sicario', new Date(2019, 1, 30), 2, 0)
   ];
 
