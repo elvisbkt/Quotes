@@ -6,15 +6,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 A simple WebApp that allows a user to create a quote, view quotes, upVote or downVote a quote and delete a quote.
 
-![homepage](https://github.com/gkarumba/Quote-App/blob/master/src/assets/HomeScreen.png)
 
 ## Built By
 
-John Karumba
+Elvis Biketi
 
-## Live Site
 
-Can be accessed [here](https://gkarumba.github.io/Quote-App/)
 
 ## Development server
 
@@ -46,4 +43,4 @@ For any clarification or addition information, contact the author at gachegua@gm
 
 ## License
 
-This software is Licensed under MIT license Copyright (2019) [gkarumba](https://github.com/gkarumba/Quote-App/blob/master/LICENSE)
+This software is Licensed under MIT license Copyright (2019) /Quote-App/blob/master/LICENSE)
