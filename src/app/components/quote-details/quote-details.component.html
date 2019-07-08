@@ -1,0 +1,15 @@
+<div class="card text-center">
+  <div class="card-header">
+    Quote By {{ quote.author }}
+  </div>
+  <div class="card-block">
+    <h4 class="card-title">Posted By: {{ quote.postedBy }}</h4>
+    <p class="card-text"> Posted
+      {{ quote.timePosted | dateCount}} days ago
+    </p>
+    <p> <img src="https://img.icons8.com/flat_round/64/000000/hearts.png" (click)='addUpVote()'>UpVote {{ quote.upVote }}</p>
+    <p><img src="https://img.icons8.com/flat_round/64/000000/thumbs-down.png" (click)='addDownVote()'>DownVote {{ quote.downVote }}</p>
+    <button class="btn btn-outline-danger btn-md" (click)='deleteQuote(true)'>Delete</button>
+  </div>
+</div>
+

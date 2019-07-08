@@ -1,0 +1,57 @@
+<div class="centered">
+  <form #quoteForm='ngForm' (ngSubmit)='quoteForm.form.valid && submitQuote(); quoteForm.reset()'>
+    <div class="form-group row">
+      <label for="author" class="col-sm-3 col-form-label">Author</label>
+      <div class="col-sm-9">
+        <input class="form-control" id="author" placeholder="author" name='author' #author='ngModel' [(ngModel)]='quotes.author' required minlength="2">
+        <div *ngIf="author.invalid && (author.dirty || author.touched)" class="alert alert-danger">
+          <div *ngIf="author.errors.required">
+            Author is required.
+          </div>
+          <div *ngIf="author.errors.minlength">
+            Author must be at lest 2 characters long.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="quote" class="col-sm-3 col-form-label">Quote</label>
+      <div class="col-sm-9">
+        <textarea class="form-control" required minlength="5" name="quote" placeholder="quote" #quote='ngModel' [(ngModel)]='quotes.quote'></textarea>
+        <div *ngIf="quote.invalid && (quote.dirty || quote.touched)" class="alert alert-danger">
+          <div *ngIf="quote.errors.required">
+            Quote is required.
+          </div>
+          <div *ngIf="quote.errors.minlength">
+            Quote must be at lest 5 characters long.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="postedBy" class="col-sm-3 col-form-label">PostedBy</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="postedBy" placeholder="postedBy" name='postedBy' #postedBy='ngModel' [(ngModel)]='quotes.postedBy'>
+        <div *ngIf="postedBy.invalid && (postedBy.dirty || postedBy.touched)" class="alert alert-danger">
+          <div *ngIf="postedBy.errors.required">
+            PostedBy is required.
+          </div>
+          <div *ngIf="postedBy.errors.minlength">
+            PostedBy must be at lest 2 characters long.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="timePosted" class="col-sm-3 col-form-label">TimePosted</label>
+      <div class="col-sm-9">
+        <input type="date" class="form-control" id="timePosted" placeholder="timePosted" name='timePosted' #timePosted='ngModel' [(ngModel)]='quotes.timePosted'>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-9" style="text-align:center">
+        <button type="submit" class="btn btn-outline-primary" [disabled]="quoteForm.form.pristine || quoteForm.form.invalid">Add Quote</button>
+      </div>
+    </div>
+  </form>
+</div>

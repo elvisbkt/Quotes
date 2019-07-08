@@ -1,0 +1,28 @@
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="header">
+      <h3>Create New Quote</h3>
+    </div>
+    <div class="create-form">
+      <app-quote-create-form (addNewQuote)='addQuote($event)'></app-quote-create-form>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="header">
+      <h3>Most Popular Quotes</h3>
+    </div>
+    <div class="quote" *ngFor="let quote of quotes;let i = 'index'">
+        <div class="quote-header" >
+          <p appHighlight *ngIf="mostUpVotes(i) && quote.upVote>0"><q>{{ quote.quote }}</q></p>
+        </div>
+        <div class="quote-header" >
+          <p *ngIf="!mostUpVotes(i) || quote.upVote===0"><q>{{ quote.quote }}</q></p>
+        </div>
+        <div class="quote-block">
+          <button class="btn btn-outline-success btn-md" (click)='showQuoteDetails(i)' style="margin-right: 5px;">Show Details</button>
+        </div>
+      <app-quote-details *ngIf='quote.showDetails' [quote]='quote' (isToDelete)='deleteQuote($event,i)'></app-quote-details>
+    </div>
+  </div>
+</div>

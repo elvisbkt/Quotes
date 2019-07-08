@@ -1,0 +1,9 @@
+img{
+  transition: transform .2s; /* Animation */
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+}
+img:hover{
+  transform: scale(1.3);
+}
