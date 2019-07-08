@@ -17,9 +17,6 @@ Elvis Biketi
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
@@ -39,7 +36,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Author's Contact
 
-For any clarification or addition information, contact the author at gachegua@gmail.com
+For any clarification or addition information, contact the author at elvisbkt@gmail.com
 
 ## License
 
