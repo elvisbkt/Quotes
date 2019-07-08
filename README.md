@@ -39,7 +39,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Author's Contact
 
-For any clarification or addition information, contact the author at gachegua@gmail.com
+For any clarification or addition information, contact the author at elvisbkt@gmail.com
 
 ## License
 
