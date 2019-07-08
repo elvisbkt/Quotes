@@ -9,9 +9,10 @@ import { Quote } from '../../models/quote';
 export class QuoteComponent implements OnInit {
 
   quotes = [
-    new Quote(1, 'King John', 'Victorious warriors win first and then go to war', 'Junius', new Date(2019, 1, 30), 2, 0),
-    new Quote(2, 'Unknown', 'I hate war as only a soldier who has lived it can', 'Brutus', new Date(2019, 2, 30), 3, 0),
-    new Quote(3, 'McCain', 'It was misreported then, and it is misremembered now.', 'Caesar', new Date(2019, 3, 30), 4, 0)
+    new Quote(1, 'Gustavo', 'To try is to do', 'Junius', new Date(2001, 1, 30), 2, 0),
+    new Quote(2, 'Hernandes', 'Ethic is the biggest thing in KE', 'Rekless', new Date(2016, 2, 30), 3, 0),
+    new Quote(3, 'Gusto', 'It was misreported then, and it is misremembered now.', 'Caesar', new Date(2019, 3, 30), 4, 0),
+    new Quote(1, 'Jefe', 'Give thanks for life', 'Sicario', new Date(2019, 1, 30), 2, 0)
   ];
 
   addQuote(quote) {
